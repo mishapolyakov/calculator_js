@@ -17,9 +17,9 @@ function Calc ( a, b, operator ) {
     }
 }
 console.log(Calc( 2,2,'sum' )) // сложение 
-console.log(Calc( 1,14,'dif' )) // вычитание difference
-console.log(Calc( 2,14,'multi' )) // умножение multiplication
-console.log(Calc( 15,5,'div' )) // деление division
+console.log(Calc( 1,14,'dif' )) // вычитание 
+console.log(Calc( 2,14,'multi' )) // умножение 
+console.log(Calc( 15,5,'div' )) // деление 
 
 
 
