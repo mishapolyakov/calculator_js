@@ -1,5 +1,3 @@
-
-
 function Calc ( a, b, operator ) {
 
     if( typeof a != 'number' || typeof b != 'number' ) {
@@ -16,10 +14,10 @@ function Calc ( a, b, operator ) {
         return a / b
     }
 }
-console.log(Calc( 2,2,'sum' ))
-console.log(Calc( 1,14,'dif' ))
+console.log(Calc( 231,2,'sum' ))
+console.log(Calc( 13,14,'dif' ))
 console.log(Calc( 2,14,'multi' ))
-console.log(Calc( 15,5,'div' ))
+console.log(Calc( 1,5,'div' ))
 
 
 
