@@ -16,10 +16,10 @@ function Calc ( a, b, operator ) {
         return a / b
     }
 }
-console.log(Calc( 2,2,'sum' )) // сложение 
-console.log(Calc( 1,14,'dif' )) // вычитание 
-console.log(Calc( 2,14,'multi' )) // умножение 
-console.log(Calc( 15,5,'div' )) // деление 
+console.log(Calc( 2,2,'sum' ))
+console.log(Calc( 1,14,'dif' ))
+console.log(Calc( 2,14,'multi' ))
+console.log(Calc( 15,5,'div' ))
 
 
 
