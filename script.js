@@ -1,23 +1,33 @@
-function Calc ( a, b, operator ) {
+function Calc(num1, num2, operator) {
+    
+    if ( typeof num1 !== "number" || typeof num2 !== "number") {
+        return "this is not a number"
+    }
+    if( num2 === 0 && operator === 'div') {
+        return "fatal Error"
+    }
+    if ( operator !== "sum" && operator !== 'sub' && operator !== 'mult' && operator !== 'div' ) {
+        return "unknow operator"
+    }
 
-    if( typeof a != 'number' || typeof b != 'number' ) {
-        return 'Error'
-    } 
-
-    if ( operator === 'sum' ) {
-        return a + b
-    } else if ( operator === 'dif' ) {
-        return a - b
-    } else if (operator === 'multi' ) {
-        return a * b
-    } else if ( operator === 'div' ) {
-        return a / b
+    if(operator === "sum") {
+        return num1 + num2
+    } else if(operator === "sub") {
+        return num1 - num2
+    } else if(operator === "mult") {
+        return num1 * num2
+    } else if(operator === "div") {
+        return num1 / num2
     }
 }
-console.log(Calc( 231,2,'sum' ))
-console.log(Calc( 13,14,'dif' ))
-console.log(Calc( 2,14,'multi' ))
-console.log(Calc( 1,5,'div' ))
+
+console.log(Calc(4,5,"sum"))
+console.log(Calc(4,5,"sub"))
+console.log(Calc(4,5,"mult"))
+console.log(Calc(4,5,"div"))
+console.log(Calc(4,0,"div"))
+console.log(Calc(4,5,"+"))
+console.log(Calc(4,"fff","mult"))
 
 
 
