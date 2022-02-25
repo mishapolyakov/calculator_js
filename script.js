@@ -4,7 +4,7 @@ function Calc(num1, num2, operator) {
         return "this is not a number"
     }
     if( num2 === 0 && operator === 'div') {
-        return "fatal Error"
+        return "fatal error"
     }
     if ( operator !== "sum" && operator !== 'sub' && operator !== 'mult' && operator !== 'div' ) {
         return "unknow operator"
